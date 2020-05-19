@@ -32,7 +32,7 @@
                 <h6 class="mt-4">{{ days[day_name] }}</h6>
                   {% for time, status in  day_schedele.items() if status %}
 
-                        <a href="#" class="btn btn-outline-success mr-2"> {{ time }} свободно</a> 
+                        <a href="/booking/{{ profile_data.id }}/{{ day_name }}/{{time.split(':')[0]}}" class="btn btn-outline-success mr-2"> {{ time }} свободно</a> 
                   
 
                   {% endfor %}

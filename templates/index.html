@@ -23,7 +23,7 @@
           <div class="card mb-4">
             <div class="card-body">
               <div class="row">
-                <div class="col-3"><img src="{{ profile.picture }}" class="img-fluid" alt=""></div>
+                <a href="/profile/{{ profile.id }}"></a><div class="col-3"><img src="{{ profile.picture }}" class="img-fluid" alt=""></div>
                 <div class="col-9">
                   <p class="float-right">Рейтинг: {{ profile.rating }} Ставка: {{ profile.price }} / час</p>
                   <a href="/profile/{{ profile.id }}"><h2 class="h4">{{ profile.name }}</h2></a>
